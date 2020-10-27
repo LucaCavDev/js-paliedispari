@@ -1,3 +1,5 @@
+// CREO DUE FUNZIONI CHE SI ATTIVANO RISPETTIVAMENTE CLICCANDO SUL PULSANTE PARI O SU QUELLO DISPARI
+
 function lancioDadiPari() {
   var numeroUser = Math.floor((Math.random() * 5) + 1);
   var numeroPC = Math.floor((Math.random() * 5) + 1);
@@ -7,7 +9,7 @@ function lancioDadiPari() {
   var somma = (numeroUser + numeroPC);
   document.getElementById('totale').innerHTML = somma;
   document.getElementById('numeroUser').innerHTML = numeroUser;
-  document.getElementById('numeroPc').innerHTML = numeroPc;
+  document.getElementById('numeroPc').innerHTML = numeroPC;
 
   if (somma % 2 === 0){
     document.getElementById('esitoUser').innerHTML = 'hai vinto';
@@ -26,7 +28,7 @@ function lancioDadiDispari() {
   var somma = (numeroUser + numeroPC);
   document.getElementById('totale').innerHTML = somma;
   document.getElementById('numeroUser').innerHTML = numeroUser;
-  document.getElementById('numeroPc').innerHTML = numeroPc;
+  document.getElementById('numeroPc').innerHTML = numeroPC;
 
 
   if (somma % 2 != 0){
@@ -36,29 +38,4 @@ function lancioDadiDispari() {
     document.getElementById('esitoUser').innerHTML = 'hai perso';
     document.getElementById('esitoPc').innerHTML = 'hai vinto';
   }
-
-
-
 };
-
-
-
-//
-
-
-
-
-
-
-
-
-
-// function lancioDadi() {
-//   var numeroUser = Math.floor((Math.random() * 5) + 1);
-//   document.getElementById("esitoUser").innerHTML = numeroUser;
-// }
-//
-// function lancioDadi() {
-//   var numeroPC = Math.floor((Math.random() * 5) + 1);
-//   document.getElementById("esitoPc").innerHTML = numeroPC;
-// }
