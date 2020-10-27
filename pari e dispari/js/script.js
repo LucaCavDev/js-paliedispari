@@ -5,11 +5,9 @@ function lancioDadiPari() {
   console.log(numeroPC);
 
   var somma = (numeroUser + numeroPC);
-  document.getElementById('somma').innerHTML = somma;
+  document.getElementById('totale').innerHTML = somma;
   document.getElementById('numeroUser').innerHTML = numeroUser;
   document.getElementById('numeroPc').innerHTML = numeroPc;
-
-
 
   if (somma % 2 === 0){
     document.getElementById('esitoUser').innerHTML = 'hai vinto';
@@ -18,8 +16,6 @@ function lancioDadiPari() {
     document.getElementById('esitoUser').innerHTML = 'hai perso';
     document.getElementById('esitoPc').innerHTML = 'hai vinto';
   }
-
-
 };
 
 function lancioDadiDispari() {
@@ -28,7 +24,7 @@ function lancioDadiDispari() {
   console.log(numeroUser);
   console.log(numeroPC);
   var somma = (numeroUser + numeroPC);
-  document.getElementById('somma').innerHTML = somma;
+  document.getElementById('totale').innerHTML = somma;
   document.getElementById('numeroUser').innerHTML = numeroUser;
   document.getElementById('numeroPc').innerHTML = numeroPc;
 
