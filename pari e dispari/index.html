@@ -2,19 +2,54 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>prova</title>
+    <title>Cavicchioli Pari e Dispari</title>
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   </head>
   <body>
 
+    <div class="container">
+      <div class="titolo">
+        Clicca sul pulsante pari o sul pulsante dispari per estrarre due numeri casuali fra 1 e 5!  Se l'utente ha selezionato pari (o dispari) e la somma dei due numeri è pari (o dispari), l'utente vince, se no perde!
+      </div>
 
+      <div class="bottoni">
+        <div class="bottone">
+          <button onclick="lancioDadiPari()">Pari</button>
+        </div>
 
+        <div class="bottone">
+          <button onclick="lancioDadiDispari()">Dispari</button>
+        </div>
 
+      </div>
 
-    <script type="text/javascript" src="js/script.js">
+      <div class="risultato">
+        <div class="">
+          La somma dei due numeri è:
+        </div>
+        <div id="somma"></div>
+      </div>
 
-    </script>
+      <div class="finale">
+
+        <div class="utente">
+          <div class="contorni">Utente</div>
+          <div class="contorni" id=numeroUser></div>
+          <div class="contorni" id="esitoUser"></div>
+        </div>
+
+        <div class="pc">
+          <div class="contorni">PC</div>
+          <div class="contorni" id=numeroPc></div>
+          <div class="contorni" id="esitoPc"></div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
