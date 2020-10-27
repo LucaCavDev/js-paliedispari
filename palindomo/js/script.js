@@ -13,30 +13,30 @@ console.log(parola);
 //2-step. costruisco una funzione per trovare il reverse della parola inserita.
 function ReverseString(parola) {
 
-    // Check input
+    // controllo che l'input sia valido, ovvero con 2 o piu lettere
     if(!parola || parola.length < 2 ||
             typeof parola!== 'string') {
         return 'Not valid';
     }
 
-    // Take empty array revArray
+    // uso un array
     const revArray = [];
-    const length = parola.length - 1;
+    const lunga = parola.length - 1;
 
-    // Looping from the end
-    for(let i = length; i >= 0; i--) {
+    // si fa un loop
+    for(let i = lunga; i >= 0; i--) {
         revArray.push(parola[i]);
     }
 
-    // Joining the array elements
+    // unisco gli elementi nell'array
     return revArray.join('');
 }
 
-// document.write(ReverseString(parola));
+// stapo la parola inserita e quella reversed
 document.getElementById('parolaInserita').innerHTML = parola;
 document.getElementById('parolaReversed').innerHTML = ReverseString(parola);
 
-
+// se sono uguali tra loro viene stampato un messaggio, se no un altro
 if (ReverseString(parola) == parola) {
   document.getElementById('risultato').innerHTML = 'La parola che hai inserito è un palindromo, complimenti!';
 }
